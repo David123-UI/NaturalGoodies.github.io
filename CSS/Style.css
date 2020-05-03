@@ -20,7 +20,7 @@
     background-position: absolute;
     top: 0;
     color: white;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
 }
 
 .navbar {
