@@ -25,7 +25,7 @@
         
 
         <!---------Navigation Starts------------> 
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse" > 
             <div class="Container">
                 <div class="navbar-header">
                     <!---------Responsive button------------>
@@ -35,11 +35,11 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!---------Responsive button Ends------------>
-                    <a href="" class="navbar-brand"><img src="Image\Capture.JPG"width="220" height="40"></a>
+                    <a href="" id="logo" class="navbar-brand"><img src="Image\Capture.JPG"width="220" height="40"></a>
                 </div>
                         <div id="david" class="navbar-collapse collapse" >
                             <!---------Navigation Menu------------>
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right" >
                                 <li><a href="">Home</a></li>
                                 <li><a href="">Out Services</a></li>
                                 <li><a href="">Works</a></li>
@@ -88,8 +88,20 @@
         
 
         <script src="JS\jquery.ripples-min.js" type="text/javascript"></script>
-        <script src="JS\Main.js" type="text/javascript"></script>
+        
         <script src="JS\typed.min.js" type="text/javascript"></script>
+        <script>
+              var typed = new Typed('.text', {
+              strings: ['<strong>CARE YOUR <strong class="RedC">SKIN..!</strong></strong>', '<strong>YOU ARE <strong class="RedC">BEAUTIFUL..!</strong>','<strong>BEAUTY IS NOT <strong class="RedC">MAKEUP..!</strong>','<strong>LET YOUR SKIN <strong class="RedC">BREATH.!</strong>','<strong>MAKE TIME FOR <strong class="RedC">YOURSELF..!</strong>'],
+                  typespeed:0,
+                  loop:true,
+                  fadeOut: true,
+                  smartBackspace: true,
+
+            });
+        </script>
+        
+        <script src="JS\Main.js" type="text/javascript"></script>
         
 
     </body>
