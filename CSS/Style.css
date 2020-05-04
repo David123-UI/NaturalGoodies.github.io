@@ -1,7 +1,5 @@
 
-body{
-    height: 2000px;
-}
+
 
 {
     margin: 0;
@@ -207,8 +205,8 @@ body, html {
 #navbar {
     position: sticky;
     
-  background-color: black; /* Black background color */
-  opacity:0.7;
+  background-color: transparent; /* Black background color */
+  opacity:1;
   top: 0; /* Stay on top */
   width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
@@ -230,3 +228,122 @@ body, html {
   color: black;
 }
 
+.service-area{
+    color: black;
+    margin-top: 30px;
+}
+
+.service-area p{
+    margin-bottom: -5px;
+}
+    
+.service-wrap{
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+}
+
+.service-wrap::before .service-wrap::after{
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(43deg);
+    width: 120%;
+    z-index: -9;
+    transform: all 0.3s;
+    opacity: 0;
+    background: #34495e;
+
+}
+
+.service-wrap::before{
+    top: -37px;
+    left: 100%;
+ 
+}
+.service-wrap:hover:before{
+
+    left: -27px;
+    opacity: 1;
+   
+}
+.service-wrap::after{
+    right: -100%;
+    bottom: -37px;
+    
+ 
+}
+.service-wrap:hover:after{
+    right: -27px;
+    opacity: 1;
+
+}
+.service1 .service-wrap:hover{
+    color: white;
+    background-color: blueviolet;
+}
+
+
+.service2 .service-wrap:hover{
+    color: white;
+    background-color: green;
+}
+.service3 .service-wrap:hover{
+    color: white;
+    background-color: orangered;
+
+}
+.service4 .service-wrap:hover{
+    color: white;
+    background-color: crimson;
+
+}
+.service5 .service-wrap:hover{
+    color: white;
+    background-color: deeppink;
+
+}
+.service6 .service-wrap:hover{
+    color: white;
+    background-color: firebrick;
+
+}
+.service-wrap:h3{
+    color: white;
+
+}
+.service-wrap:hover h3{
+    color: white;
+}
+
+.service-wrap:hover h3:after{
+    background-color: white;
+}
+
+.service-icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.service-wrap:hover .service-icon i{
+    transform: rotate(360deg);
+}
+.service-wrap h3{
+    
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0;
+    
+}
